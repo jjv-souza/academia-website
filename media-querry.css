@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media (min-width: 1000px) {
+
+    body {
+        background-color: white;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
+
+        position: unset;        
+
+    }
+
+    .menu a {
+        font-size: 1.2em;
+    }
+
+    #ham {
+        display: none;
+    }
+}

@@ -1,1 +1,122 @@
-@charset "UTF";
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --fundo: #1C1C1C;
+    --destaque: #E99B00;
+    --destaqueLetra: #FFD100;
+    --letra: #ffffff;
+}
+
+.botao {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--destaqueLetra);
+    width: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    user-select: none;
+
+    transition: all .2s ease;
+    
+}
+
+.botao:hover {
+    background-color: var(--destaque);
+}
+
+.botao > i {
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--letra);
+}
+
+header {
+    
+}
+
+.cabeca {
+    width: 100%;
+    height: min-content;
+    background-color: black;
+    padding-right: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+}
+
+.media-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+#ham {
+    display: block;
+    font-size: 1.5em;
+    transition: transform .2s ease;
+    cursor: pointer;
+
+}
+
+#ham:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 1));
+    padding: 30px 0px 0px 50px;
+    height: 50%;
+    width: 200px;
+
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    position: absolute;
+    right: 0;
+    top: 160px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+
+    transition: all .2s ease;
+}
+
+.menu a:hover {
+    color: var(--destaqueLetra);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.menu.ativo {
+    display: flex;
+}
+
+.banner {
+    
+}
