@@ -299,6 +299,11 @@ main {
     color: black;
 }
 
+.sobre .info > .paragrafo {
+    color: black;
+    text-align: center;
+}
+
 .sobre .info .divisa {
     font-size: 2em;
     color: black;
