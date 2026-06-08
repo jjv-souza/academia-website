@@ -20,6 +20,7 @@
 
 /* BOTAO */
 .botao {
+    height: max-content;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -80,6 +81,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3em;
     user-select: none;
+    color: var(--destaque);
 }
 
 body {
@@ -122,7 +124,7 @@ body {
     transform: scale(1.1);
 }
 
-.menu { /* ----------Menu--------- */
+.cabeca .menu { /* ----------Menu--------- */
     background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8));
     padding: 30px 0px 0px 50px;
     height: 100%;
@@ -138,7 +140,7 @@ body {
     top: 160px;
 }
 
-.menu a {
+.cabeca .menu a {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
@@ -146,7 +148,7 @@ body {
     transition: all .2s ease;
 }
 
-.menu a:hover {
+.cabeca .menu a:hover {
     color: var(--destaqueLetra);
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -210,10 +212,6 @@ main {
     align-items: center;
 }
 
-.planos .divisa {
-    color: var(--destaque);
-}
-
 .container {
     margin: 60px;
 
@@ -270,6 +268,7 @@ main {
 }
 
 .sobre {
+    padding-bottom: 60px;
     width: 100%;
     background-color: var(--destaqueLetra);
     display: flex;
@@ -279,29 +278,206 @@ main {
 }
 
 .sobre .imagem {
-    height: 300px;
+    height: 350px;
     background-image: url(imagens/banner-sobre-power.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 .sobre .info {
-    padding: 40px;
+    padding: 30px 40px 0px 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
-.info .titulo {
+.sobre .info .titulo {
     font-size: 1.5em;
     color: black;
 }
 
-.info .divisa {
+.sobre .info .divisa {
     font-size: 2em;
     color: black;
 }
 
-.info .paragrafo {
+.sobre .info .paragrafo {
     color: black;
     font-size: 1.2em;
+    font-weight: bold;
+}
+
+.vantagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+}
+
+.vantagens .item .paragrafo {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+.hora-local {
+    padding: 100px 40px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.hora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.hora .info {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hora .info i {
+    font-size: 2em;
+    display: none;
+}
+
+.hora .info .paragrafo {
+    color: white;
+    font-size: 1.2em;
+}
+
+.hora .info p {
+    color: var(--destaqueLetra);
+}
+
+.hora .hs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.local {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.local .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.local .info i {
+    font-size: 2em;
+    padding-right: 20px;
+}
+
+.local .info p {
+    text-align: start;
+}
+
+.contato {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imagens/banner-sobre-power.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+
+    padding: 60px 40px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+
+}
+
+.contato .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato .info > i {
+    font-size: 3em;
+}
+
+.contato .titulo {
+    font-size: 1.5em;
+}
+
+footer {
+    padding: 20px 20px 60px 20px;
+    background-color: var(--fundoInverso);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .menus {
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+footer .hud {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .hud a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-underline-offset: 20px;
+
+    transition: all .3s ease;
+}
+
+footer .hud a:hover {
+    color: var(--destaqueLetra);
+    text-decoration: underline;
+}
+
+footer .social {
+    display: flex;
+    gap: 30px;
+}
+
+footer .social a {
+    color: white;
+    font-size: 1.7em;
+
+    transition: all .3s ease;
+}
+
+footer .social a:hover {
+    color: var(--destaqueLetra);
+}
+
+footer p > a {
+    color: var(--destaqueLetra);
 }
