@@ -1,27 +1,47 @@
 @charset "UTF-8";
 
 @media (min-width: 1000px) {
-
-    body {
-        background-color: white;
-    }
-
     .menu {
+        width: 100%;
+        padding-right: 30px;
+
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        gap: 50px;
+        
 
+        gap: 50px;
         position: unset;        
 
     }
 
     .menu a {
         font-size: 1.2em;
+        text-wrap: nowrap;
     }
 
     #ham {
         display: none;
+    }
+
+    .banner .texto {
+        width: 50%;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 700px) {
+    .sobre {
+        flex-direction: row;
+    }
+
+    .sobre .imagem {
+        width: 50%;
+    }
+
+    .sobre .info {
+        width: 50%;
     }
 }
