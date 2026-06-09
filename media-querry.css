@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media (min-width: 1000px) {
+
     .cabeca .menu {
         width: 100%;
         padding-right: 30px;
@@ -33,6 +34,10 @@
 }
 
 @media (min-width: 700px) {
+    body {
+        width: 99vw;
+    }
+
     .sobre {
         flex-direction: row;
         padding-bottom: 0px;
