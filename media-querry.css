@@ -23,6 +23,10 @@
         text-wrap: nowrap;
     }
 
+    #fale {
+        display: flex;
+    }
+
     #ham {
         display: none;
     }
@@ -34,8 +38,9 @@
 }
 
 @media (min-width: 700px) {
-    body {
-        width: 99vw;
+    .banner .texto {
+        font-size: 1.2em;
+        padding: 60px;
     }
 
     .sobre {

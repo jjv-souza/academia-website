@@ -85,8 +85,6 @@
 }
 
 body, html {
-    width: 98vw;
-    height: 100vh;
     background-color: var(--fundo);
     color: var(--letra);
 }
@@ -112,6 +110,10 @@ body, html {
     flex-wrap: nowrap;
     align-items: center;
     gap: 20px;
+}
+
+#fale {
+    display: none;
 }
 
 #ham {
@@ -173,7 +175,8 @@ body, html {
     height: 100%;
     width: 90%;
     max-width: 500px;
-    padding: 60px 0px 60px 60px;
+    font-size: .9em;
+    padding: 60px 20px 60px 20px;
 
     display: flex;
     flex-flow: column wrap;
