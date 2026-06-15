@@ -112,10 +112,6 @@ body, html {
     gap: 20px;
 }
 
-#fale {
-    display: none;
-}
-
 #ham {
     display: block;
     font-size: 1.5em;
@@ -169,6 +165,10 @@ body, html {
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#fale {
+    display: none;
 }
 
 .banner .texto {
