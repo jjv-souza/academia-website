@@ -1,498 +1,511 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Jost", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
 }
 
 :root {
-    --fundo: #000000;
-    --fundoInverso: #1a1a1a;
-    --destaque: #E99B00;
-    --destaqueLetra: #FFD100;
-    --letra: #ffffff;
+  --fundo: #000000;
+  --fundoInverso: #1a1a1a;
+  --destaque: #e99b00;
+  --destaqueLetra: #ffd100;
+  --letra: #ffffff;
 }
-
 
 /* BOTAO */
 .botao {
-    height: max-content;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: var(--destaqueLetra);
-    width: max-content;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
-    user-select: none;
+  height: max-content;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--destaqueLetra);
+  width: max-content;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  user-select: none;
 
-    transition: background-color .3s ease;
-    
+  transition: background-color 0.3s ease;
 }
 
 .botao:hover {
-    background-color: var(--destaque);
+  background-color: var(--destaque);
 }
 
 .botao > i {
-    font-weight: bolder;
-    font-size: 1.2em;
-    padding-right: 5px;
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding-right: 5px;
 }
 
 /* BOTAO INVERSO */
 .botao-inverso {
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    width: max-content;
-    padding: 10px;
-    border: solid 2px white;
-    border-radius: 5px;
-    color: white;
-    user-select: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  width: max-content;
+  padding: 10px;
+  border: solid 2px white;
+  border-radius: 5px;
+  color: white;
+  user-select: none;
 
-    transition: background-color .4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .botao-inverso:hover {
-    background-color: rgba(255, 255, 255, 0.219);
+  background-color: rgba(255, 255, 255, 0.219);
 }
 
 .botao-inverso > i {
-    font-weight: bolder;
-    font-size: 1.2em;
-    padding-right: 5px;
+  font-weight: bolder;
+  font-size: 1.2em;
+  padding-right: 5px;
 }
 
 /* FONTS */
 .titulo {
-    font-family: "Archivo Black", sans-serif;
-    text-transform: uppercase;
-    color: white;
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  color: white;
 }
 
 .divisa {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3em;
-    user-select: none;
-    color: var(--destaque);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3em;
+  user-select: none;
+  color: var(--destaque);
 }
 
-body, html {
-    background-color: var(--fundo);
-    color: var(--letra);
+body,
+html {
+  background-color: var(--fundo);
+  color: var(--letra);
+  overflow-x: hidden;
 }
 
 .cabeca {
-    width: 100%;
-    height: min-content;
-    background-color: var(--fundo);
-    padding-right: 40px;
+  width: 100%;
+  height: min-content;
+  background-color: var(--fundo);
+  padding-right: 40px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    width: 250px;
+  width: 250px;
 }
 
 .media-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
 }
 
 #ham {
-    display: block;
-    font-size: 1.5em;
-    transition: transform .2s ease;
-    cursor: pointer;
-
+  display: block;
+  font-size: 1.5em;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 #ham:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.cabeca .menu { /* ----------Menu--------- */
-    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8));
-    padding: 30px 0px 0px 50px;
-    height: 100%;
-    width: 200px;
+.cabeca .menu {
+  /* ----------Menu--------- */
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8));
+  padding: 30px 0px 0px 50px;
+  height: 100%;
+  width: 200px;
 
-    display: none;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
 
-    position: absolute;
-    right: 0;
-    top: 160px;
+  position: fixed;
+  right: -250px;
+  top: 160px;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition:
+    right 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .cabeca .menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
 
-    transition: all .2s ease;
+  transition: color 0.2s ease;
 }
 
 .cabeca .menu a:hover {
-    color: var(--destaqueLetra);
-    text-decoration: underline;
-    text-underline-offset: 10px;
+  color: var(--destaqueLetra);
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 .menu.ativo {
-    display: flex;
+  position: absolute;
+  right: 0;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.banner { /* ----------Banner--------- */
-    width: 100%;
-    height: max-content;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(imagens/banner-power.jpg);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.banner {
+  /* ----------Banner--------- */
+  width: 100%;
+  height: max-content;
+  background-image:
+    linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(imagens/banner-power.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #fale {
-    display: none;
+  display: none;
 }
 
 .banner .texto {
-    height: 100%;
-    width: 90%;
-    max-width: 500px;
-    font-size: .8em;
-    padding: 60px 20px 60px 20px;
+  height: 100%;
+  width: 90%;
+  max-width: 500px;
+  font-size: 0.8em;
+  padding: 60px 20px 60px 20px;
 
-    display: flex;
-    flex-flow: column wrap;
-    align-items: start;
-    justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  justify-content: center;
 
-    gap: 40px;
+  gap: 40px;
 }
 
 .banner .titulo {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .banner span {
-    color: var(--destaqueLetra);
+  color: var(--destaqueLetra);
 }
 
 .banner .paragrafo {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .banner .botaos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 main {
-    width: 100%;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
-.planos { /* ---------Planos--------- */
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.planos {
+  /* ---------Planos--------- */
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-    margin: 60px;
+  margin: 60px;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card {
-    width: 300px;
-    background-color: var(--fundoInverso);
-    padding: 30px;
-    border-radius: 5px;
-    border: solid 2px var(--destaque);
+  width: 300px;
+  background-color: var(--fundoInverso);
+  padding: 30px;
+  border-radius: 5px;
+  border: solid 2px var(--destaque);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    transition: all .3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    background-color: #2c2c2c;
+  transform: scale(1.05);
+  background-color: #2c2c2c;
 }
 
 .card > .titulo {
-    color: var(--destaqueLetra);
+  color: var(--destaqueLetra);
 }
 
 .valor {
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .valor .titulo {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .card ul {
-    width: 100%;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    list-style: square;
+  width: 100%;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  list-style: square;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 10px;
 }
 
 .sobre {
-    padding-bottom: 60px;
-    width: 100%;
-    background-color: var(--destaqueLetra);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+  padding-bottom: 60px;
+  width: 100%;
+  background-color: var(--destaqueLetra);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .sobre .imagem {
-    height: 350px;
-    background-image: url(imagens/banner-sobre-power.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+  height: 350px;
+  background-image: url(imagens/banner-sobre-power.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .sobre .info {
-    padding: 30px 40px 0px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  padding: 30px 40px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sobre .info .titulo {
-    font-size: 1.5em;
-    color: black;
+  font-size: 1.5em;
+  color: black;
 }
 
 .sobre .info > .paragrafo {
-    color: black;
-    text-align: center;
+  color: black;
+  text-align: center;
 }
 
 .sobre .info .divisa {
-    font-size: 2em;
-    color: black;
+  font-size: 2em;
+  color: black;
 }
 
 .sobre .info .paragrafo {
-    color: black;
-    font-size: 1.2em;
-    font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .vantagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
 }
 
 .vantagens .item .paragrafo {
-    font-size: 1.5em;
-    padding: 5px;
+  font-size: 1.5em;
+  padding: 5px;
 }
 
 .hora-local {
-    padding: 100px 40px 60px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  padding: 100px 40px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .hora {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hora .info {
-    
-    margin-top: 40px;
-    padding: 10px;
-    border-radius: 10px;
-    border: solid 1px white;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px white;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .hora .info i {
-    font-size: 2em;
-    display: none;
+  font-size: 2em;
+  display: none;
 }
 
 .hora .info .paragrafo {
-    color: white;
-    font-size: 1.2em;
+  color: white;
+  font-size: 1.2em;
 }
 
 .hora .info p {
-    color: var(--destaqueLetra);
+  color: var(--destaqueLetra);
 }
 
 .hora .hs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .local {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
 .local .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .local .info i {
-    font-size: 2em;
-    padding-right: 20px;
+  font-size: 2em;
+  padding-right: 20px;
 }
 
 .local .info p {
-    text-align: start;
+  text-align: start;
 }
 
 .contato {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(imagens/banner-sobre-power.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(imagens/banner-sobre-power.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
 
-    padding: 60px 40px 60px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 40px;
-
-
+  padding: 60px 40px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
 }
 
 .contato .info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contato .info > i {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .contato .titulo {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 footer {
-    width: 100%;
-    padding: 20px 20px 60px 20px;
-    background-color: var(--fundoInverso);
+  width: 100%;
+  padding: 20px 20px 60px 20px;
+  background-color: var(--fundoInverso);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 footer .menus {
-    padding-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
 footer .hud {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 footer .hud a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3em;
-    text-underline-offset: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  text-underline-offset: 20px;
 
-    transition: all .3s ease;
+  transition: color 0.3s ease;
 }
 
 footer .hud a:hover {
-    color: var(--destaqueLetra);
-    text-decoration: underline;
+  color: var(--destaqueLetra);
+  text-decoration: underline;
 }
 
 footer .social {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 footer .social a {
-    color: white;
-    font-size: 1.7em;
+  color: white;
+  font-size: 1.7em;
 
-    transition: all .3s ease;
+  transition: color 0.3s ease;
 }
 
 footer .social a:hover {
-    color: var(--destaqueLetra);
+  color: var(--destaqueLetra);
 }
 
 footer p > a {
-    color: var(--destaqueLetra);
+  color: var(--destaqueLetra);
 }

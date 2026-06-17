@@ -11,7 +11,8 @@
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        
+        opacity: 1;
+        pointer-events: auto;
 
         gap: 50px;
         position: unset;        
